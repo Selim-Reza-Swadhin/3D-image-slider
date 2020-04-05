@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive sign up form</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        body{
+            background: #b6ccf8;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wrap{
+            max-width: 400px;
+            margin: auto;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        p{
+            font-size: 15px;
+            padding: 10px;
+        }
+        span{
+            font-weight: bold;
+        }
+        input[type=text], input[type=password]{
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        input[type=submit]{
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        button, input[type=submit]{
+            width: 96%;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 13px;
+            font-size: 20px;
+            background: #ff0099;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover, input[type=submit]:hover{
+           background:  #330066;
+        }
+        .fa-facebook{
+            padding: 10px;
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Freelancer</h1>
+        <h2>Sign Up</h2>
+
+        <form action="">
+            <button><i class="fa fa-facebook"></i>Connect with Facebook</button><br/>
+            <span>Or</span>
+            <input type="text" name="email" id="" placeholder="Email Address">
+            <input type="password" name="password" placeholder="Password" id="">
+            <input type="submit" value="Join Now">
+            <p>By registering you confirm that you accept the <a href="#">Terms and Conditions and privacy Policy</a></p>
+            <hr>
+            <p>Already Have a Account?<a href="#">Log In</a></p>
+        </form>
+    </div>
+</body>
+</html>

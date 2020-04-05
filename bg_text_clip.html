@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background text clip css</title>
+    <style>
+        body{
+            background: green;
+            color: #fff;
+        }
+
+        .text-box{
+            background: url("dnld/i4.jpg");
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: 50% 50%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+           -webkit-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            text-transform: uppercase;
+            font: 10vmax/0.50 Open Sans, Impact; /*20vmax/0.50 */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h2>bangladesh</h2>
+    </div>
+</body>
+</html>

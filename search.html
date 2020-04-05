@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Box</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+    body{
+        background: #660033; 
+		overflow:hidden;
+        box-sizing:border-box;       
+    }
+    input[type=text]{
+        min-width: 96%;
+        /*box-sizing:border-box;*/
+        border:2px solid #ccc;
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: white;       
+        padding: 12px 20px 12px 48px;
+        margin-top: 200px;
+    }
+
+    /* fa{no apply } */
+
+    .fa-search{
+            position: absolute;
+            color: #614e4e;
+            margin-top: -48px;
+            font-size: 44px;
+            margin-left: 5px;
+            }
+</style>
+</head>
+<body>
+    <form action="www.google.com">
+        <input type="text" name="Search" placeholder="Search...">
+        <i class="fa fa-search"></i>
+    </form>
+</body>
+</html>

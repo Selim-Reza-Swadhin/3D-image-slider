@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Transform Navigation bar</title>
+    <style>
+        body{
+            background: #f2f2f2;
+			}
+			
+        .navbar{
+				max-width: 1100px;
+				margin: auto;
+				margin-top: 100px;
+				}
+		
+        .menus{
+				padding: 25px;
+				background: yellow;
+				box-shadow: 10px 10px 5px grey;
+				float: left;
+				margin: 1.5px;
+				width: 120px;
+				text-align: center;
+			   }
+		  
+          a{
+              text-decoration: none;
+              font-size: 20px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: black;
+              font-weight: bold;
+            }
+		  
+          .menus:hover{
+					  background: green;
+					  transition: 1s;
+					  transform: rotate(360deg);              
+					 }
+			 
+          a:hover{
+				  color: white;
+				  transition: 1s;
+				  }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menus"><a href="#">Home</a></div>
+        <div class="menus"><a href="#">Movie</a></div>
+        <div class="menus"><a href="#">Music</a></div>
+        <div class="menus"><a href="#">Gallary</a></div>
+        <div class="menus"><a href="#">Download</a></div>
+        <div class="menus"><a href="#">Contact</a></div>
+    </div>
+</body>
+</html>

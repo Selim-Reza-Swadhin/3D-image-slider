@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functional Search Box</title>
+    <style>
+        body{
+        background: #333;
+        }
+
+    .main{
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 150px;
+       }
+
+    input[type=text]{
+                    width: 90%;
+                    padding: 12px;
+                    font-family: Arial;
+                    font-size: 17px;
+                    border: #0076a3;
+                    border-right: 0;
+                    border-radius: 5px 0 0 5px;
+                    font-style: italic;
+                    }
+
+    input[type=submit]{
+                        position: absolute;
+                        padding: 12px;
+                        width: 8%;
+                        font-family: Arial;
+                        font-size: 17px;
+                        text-shadow: 0 0 1px #000;
+                        cursor: pointer;
+                        text-align: center;
+                        border-right: 0;
+                        border-radius: 0 5px  5px 0;
+                        color: #fff;
+                        background: linear-gradient(#00adee,#0076a5);
+                        border: 1px solid#0076a3;
+                      }
+
+    input[type=submit]:hover{
+                            background: linear-gradient(#0095cc,#00678e)
+                           }
+
+    input[type=text]:focus,input[type=submit]:focus{
+                                                    outline: none;
+                                                   }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="https://www.youtube.com" target="_blank" method="GET">
+            <input type="text" name="search" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+
+</html>

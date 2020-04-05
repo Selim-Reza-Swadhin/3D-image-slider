@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>How to create icon bar</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+	<style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+		}
+		
+	.icon-bar{
+			width:100%;
+			background:purple;
+			overflow:auto;	
+			}
+			
+	.icon-bar a{
+				float:left;
+				text-decoration:none;
+				width:20%;
+				text-align:center;
+				padding:12px 0;
+				transition:all 0.3s ease;
+				color:#fff;
+				font-size:40px;	
+				}
+	
+	.icon-bar a:hover{
+					background:black;
+					}
+					
+	.active{
+			background:green;
+			}
+	
+	</style>
+</head>
+<body>
+	<div class="icon-bar">
+		<a class="active" href="#"><i class="fa fa-home"></i></a>
+		<a href="#"><i class="fa fa-search"></i></a>
+		<a href="#"><i class="fa fa-envelope"></i></a>
+		<a href="#"><i class="fa fa-globe"></i></a>
+		<a href="#"><i class="fa fa-trash"></i></a>
+	</div>
+</body>
+</html>

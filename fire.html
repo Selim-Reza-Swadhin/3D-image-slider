@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fire Effect Text Animation</title>
+    <style>
+        body{
+            background: #000;
+        }
+        .wrap{
+            width: 700px;
+            margin: 100px auto;
+            color: #fff;
+            text-align: center;
+            font-size: 20em;
+            font-family: impact;
+        }
+        span{
+            display: block;
+            background: url('dnld/fire2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fire .5s linear infinite;
+        }
+        @keyframes fire {
+            0%{background-position: 0% 50%}
+            0%{background-position: 100% -50%}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <span>FIRE</span>
+    </div>
+</body>
+</html>

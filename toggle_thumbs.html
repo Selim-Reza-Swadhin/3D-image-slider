@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toggle Thumbs-up and thumbs-down</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style type="text/css">
+        .wrap{
+            max-width: 500px;
+            margin: auto;
+        }
+        .fa{
+            font-size: 20em;
+            cursor: pointer;
+            user-select: all;
+           color: red;
+        }
+        .fa:hover{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript">
+        function myFunction(x){
+            x.classList.toggle("fa-thumbs-down");
+        }
+    </script>
+</body>
+</html>

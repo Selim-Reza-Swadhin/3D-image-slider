@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation text</title>
+    <style>
+        body,h1{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background: #000;
+        }
+        
+        .best{
+            margin: 12%;
+            text-align: center;
+        }
+        
+        h1{
+            font-size: 15em;
+            color: rgba(255,255,255,0.1);
+            background: url(dnld/e.jpg);
+            background-size: cover;
+            background-position: center;
+            -webkit-background-clip:text;
+            -webkit-animation: animation 20s linear infinite;
+        }
+        
+        @keyframes animation{
+            0%{background-position: left 0px top 10px}
+            50%{background-position: left 800px top 10px}
+        }
+    </style>
+</head>
+<body>
+    <div class="best">
+        <h1>COLOR</h1>
+    </div>
+
+</body>
+</html>

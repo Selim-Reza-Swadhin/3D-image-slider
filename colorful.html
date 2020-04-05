@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>color loader</title>
+	<style type="text/css">
+	body{
+		background-color:skyblue;
+		}
+		
+	.wrap{
+		margin:auto;
+		width:100px;
+		margin-top:100px;
+		}
+		
+	.loader{
+			width:120px;
+			height:120px;
+			border:8px solid #f2f2f2;
+			border-radius:50%;
+			border-right-color:orange;
+			border-left-color:pink;
+			border-top-color:purple;
+			border-bottom-color:hotpink;
+			animation:spin 3s linear infinite;
+			}
+		
+	@keyframes spin{
+			0%{transform:rotate(0deg)}
+			100%{transform:rotate(360deg)}
+		   }	
+		   
+	@-webkit-keyframes spin{
+			0%{-webkit-transform:rotate(0deg)}
+			100%{-webkit-transform:rotate(360deg)}
+		   }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="loader"></div>
+	</div>
+
+</body>
+</html>
